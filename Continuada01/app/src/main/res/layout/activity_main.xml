@@ -63,9 +63,8 @@
 
     <TextView
         android:id="@+id/tv_resultado"
-        android:layout_width="333dp"
-        android:layout_height="70dp"
-        android:paddingLeft="50dp"
+        android:layout_width="416dp"
+        android:layout_height="65dp"
         android:paddingTop="20dp"
         android:text=""
         android:textSize="20sp"

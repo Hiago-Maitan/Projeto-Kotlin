@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     fun calcular(componente: View) {
         Toast.makeText(this, "calculando...", Toast.LENGTH_SHORT).show()
 
-        //transformando dados em inteiros
+        //transformando dados em inteiros/String
         val usuario = et_usuario.text.toString()
         val anoAtual = et_anoAtual.text.toString().toInt()
         val idade = et_idade.text.toString().toInt()
@@ -28,13 +28,13 @@ class MainActivity : AppCompatActivity() {
             tv_resultado.text = "Dados Inválidos"
             tv_resultado.setTextColor(Color.RED)
         } else if (anoQueNasceu >= 2000 && anoQueNasceu <= 2010) {
-            tv_resultado.text = "${usuario} nasceu no ano ${anoQueNasceu} e é Geração X"
+            tv_resultado.text = "${usuario} nasceu em ${anoQueNasceu} e é Geração X"
             tv_resultado.setTextColor(Color.BLUE)
         } else if (anoQueNasceu >= 2011) {
-            tv_resultado.text = "${usuario} nasceu no ano ${anoQueNasceu} e é Geração Novinhos"
+            tv_resultado.text = "${usuario} nasceu em ${anoQueNasceu} e é Geração 1000"
             tv_resultado.setTextColor(Color.MAGENTA)
         } else {
-            tv_resultado.text = "${usuario} nasceu no ano ${anoQueNasceu} e é Geração Idoso"
+            tv_resultado.text = "${usuario} nasceu em ${anoQueNasceu} e é Geração YZ"
             tv_resultado.setTextColor(Color.GREEN)
         }
 
