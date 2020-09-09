@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="333dp"
+        android:layout_height="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:text="Hiago Continuada 01"
+        android:textColor="#F000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_titulo2"
+        android:layout_width="333dp"
+        android:layout_height="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:text="Descubra o ano que você nasceu abaixo..."
+        android:textColor="#F000"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
+    />
+
+    <EditText
+        android:id="@+id/et_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Usuário"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo2" />
+
+    <EditText
+        android:id="@+id/et_anoAtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ano atual"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_usuario" />
+
+    <EditText
+        android:id="@+id/et_idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Sua idade"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_anoAtual" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="333dp"
+        android:layout_height="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_calcular" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="calcular"
+        android:onClick="calcular"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_idade"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
